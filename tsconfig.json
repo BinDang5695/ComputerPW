@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["ES2021", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "types": ["node", "@playwright/test"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+    "@flows/*": ["test_flows/*"],
+    "@data/*": ["test_data/*"],
+    "@models/*": ["models/*"],
+    "@constants/*": ["constants/*"],
+    "@functions/*": ["test-functions/*"],
+    "@ComputerDataType/*": ["ComputerDataType/*"]
+    }
+  },
+
+  "include": [
+    "tests/**/*.ts",
+    "test_flows/**/*.ts",
+    "test_data/**/*.ts",
+    "constants/**/*.ts",
+    "models/**/*.ts",
+    "ComputerDataType/**/*.ts",
+    "playwright.config.ts"
+  ]
+}

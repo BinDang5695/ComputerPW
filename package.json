@@ -1,0 +1,28 @@
+{
+  "name": "sdetpro-k18-playwright",
+  "scripts": {
+    "test:computer": "playwright test tests/computer/Computer.spec.ts  --project=chrome --project=edge",
+    "test:computer:chrome": "playwright test tests/computer/Computer.spec.ts  --project=chrome",
+    "test:computer:edge": "playwright test tests/computer/Computer.spec.ts --project=edge"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.57.0",
+    "ajv": "^8.17.1",
+    "ajv-draft-04": "^1.0.0",
+    "ajv-formats": "^3.0.1",
+    "canvas": "^3.2.0",
+    "node-fetch": "^3.3.2",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^3.11.174",
+    "prompt-sync": "^4.2.0",
+    "properties-reader": "^2.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@types/node": "^25.6.0",
+    "@types/pdf-parse": "^1.1.5",
+    "allure-playwright": "^3.4.3",
+    "typescript": "^6.0.3"
+  }
+}
