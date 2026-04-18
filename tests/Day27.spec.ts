@@ -103,7 +103,7 @@ test(dynamicControlDesc, async ({page}) => {
 
     // Interact with input checkbox's elements
     let checkboxLocator = checkboxFormLocator.locator('#checkbox input');
-    let isCheckboxChecked = await checkboxLocator.isChecked();
+    const isCheckboxChecked = await checkboxLocator.isChecked();
 
     if(!isCheckboxChecked){
         await checkboxLocator.click();

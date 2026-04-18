@@ -3,7 +3,11 @@
   "scripts": {
     "test:computer": "playwright test tests/computer/Computer.spec.ts  --project=chrome --project=edge",
     "test:computer:chrome": "playwright test tests/computer/Computer.spec.ts  --project=chrome",
-    "test:computer:edge": "playwright test tests/computer/Computer.spec.ts --project=edge"
+    "test:computer:edge": "playwright test tests/computer/Computer.spec.ts --project=edge",
+    "create:report": "npx playwright show-report",
+    "create:allure-report": "allure generate ./test-results/allure -o allure-report --clean & allure open allure-report",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "dependencies": {
     "@playwright/test": "^1.57.0",
@@ -19,10 +23,15 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@faker-js/faker": "^10.1.0",
     "@types/node": "^25.6.0",
     "@types/pdf-parse": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
     "allure-playwright": "^3.4.3",
-    "typescript": "^6.0.3"
+    "eslint": "^10.2.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.58.2"
   }
 }

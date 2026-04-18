@@ -15,7 +15,7 @@ export default class TotalsComponent {
     }
 
     public async priceCategories(): Promise<any>{
-        let priceCategories: any = {};
+        const priceCategories: any = {};
         // Get all row from price table
         const priceTableRowLocatorList = await this.component.locator(this.priceTableRowSel).all();
 
